@@ -8,14 +8,18 @@ export const style = StyleSheet.create({
     },
     boxTop: {
         height: 200,
+        width: '100%',
         backgroundColor: 'red',
     },
     boxMid: {
         heigth: 200,
+        width: '100%',
+
         backgroundColor: 'blue',
     },
     boxBottom: {
         heigth: 200,
+        width: '100%',
         backgroundColor: 'blue',
     },
 

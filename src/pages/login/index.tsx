@@ -5,17 +5,19 @@ import { style } from './styles';
 
 export default function Login() {
     return (
-        <View styles={style.container} >
-            {/* primeiro */}
-            <View styles={style.boxTop}>
+        <View style={style.container} >
+            <View style={style.boxTop}>
+                <Text>Top</Text>
 
             </View >
-            {/* segundo */}
-            <View styles={style.boxMid}>
+
+            <View style={style.boxMid}>
+                <Text>Mid</Text>
 
             </View>
-            {/* terceiro */}
-            <View styles={style.boxBottom}>
+
+            <View style={style.boxBottom}>
+                <Text>Bottom</Text>
 
             </View>
         </View>
