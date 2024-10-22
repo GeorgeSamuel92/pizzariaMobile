@@ -14,14 +14,13 @@ export const style = StyleSheet.create({
 
   inputContainer: {
     height:Dimensions.get('window').height/3,
-    width:'100%',
     paddingVertical: 34,
     paddingHorizontal: 14,
   },
 
   input: {
-    height:Dimensions.get('window').height/4,
-    width:'100%',
+    width: "95%",
+    height:Dimensions.get('window').height/5,
     backgroundColor: "#101026",
     marginBottom: 12,
     borderRadius: 4,
@@ -32,17 +31,11 @@ export const style = StyleSheet.create({
   },
 
   button: {
+    width: "95%",
     height:Dimensions.get('window').height/3,
-    width:'100%',
     backgroundColor: "#3fffa3",
     borderRadius: 4,
     justifyContent: "center",
     alignItems: "center",
   },
-
-  text: {
-    fontWeight:'bold',
-    marginTop: 40,
-  },
-
 });

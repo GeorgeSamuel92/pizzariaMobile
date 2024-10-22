@@ -1,34 +1,51 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native'
+import React from "react";
+import {
+    View,
+    Text,
+    Image,
+    TextInput,
+    TouchableOpacity,
 
-import { style } from './styles';
+} from "react-native";
+
+import { style } from '../Login/styles';
+import Logo from '../../assets/image/logo01.png';
+
+// const [email, setEmail] = useState("");
+// const [password, setPassword] = useState("");
 
 export default function Login() {
     return (
         <View style={style.container} >
-            <View style={style.boxTop}>
-                <Text>Top</Text>
+            <View >
+                <Image 
+                style={style.logo} 
+                source={Logo}
+                resizeMode='contain'/>
+            </View>
+            <View style={style.inputContainer}>
+                <Text style={style.text}> Olá, seja bem vindo!!!</Text>
+                <TextInput
+                    style={style.input}
+                    placeholder="Digite seu email"
+                    placeholderTextColor="#f0f0f0"
+                // value={email}
+                // onChangeText={setEmail}
+                />
+                <TextInput
+                    style={style.input}
+                    placeholder="Digite sua senha"
+                    placeholderTextColor="#f0f0f0"
+                    secureTextEntry={true}
+                // value={password}
+                // onChangeText={setPassword}
+                />
 
+                <TouchableOpacity style={style.button}>
+
+                </TouchableOpacity>
             </View >
 
-            <View style={style.boxMid}>
-                <Text>Mid</Text>
-
-            </View>
-
-            <View style={style.boxBottom}>
-                <Text>Bottom</Text>
-
-            </View>
         </View>
     )
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContentent: 'center',
-    }
-})
